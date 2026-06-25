@@ -9,8 +9,7 @@ import { WHATSAPP_URL } from "@/lib/constants";
 
 const navItems = [
   { label: "A Empresa", href: "/a-empresa" },
-  { label: "Formulários", href: "/contato#formularios" },
-  { label: "Revistas", href: "/revistas" },
+  { label: "Serviços", href: "/contato#formularios" },
   { label: "E-books", href: "/e-books" },
   { label: "Contato", href: "/contato" },
 ];
@@ -38,27 +37,18 @@ export function Header() {
 
   const inner = (
     <>
+      <Link href="/" aria-label="NPG Capital" className="fixed left-5 top-4 z-50 lg:left-8">
+        <Image
+          src="/assets/logoFull.png"
+          alt="NPG Capital"
+          width={240}
+          height={60}
+          className="h-14 w-auto object-contain"
+          priority
+        />
+      </Link>
       <div className={shellClass}>
         <div className="mx-auto flex h-[72px] w-full items-center justify-between px-4 sm:px-5 lg:px-6">
-          <Link href="/" className="flex items-center gap-3" aria-label="NPG Capital">
-            <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-[8px] border border-white/35 bg-white/92 shadow-[0_12px_30px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.9)]">
-              <Image
-                src="/assets/npg-symbol.png"
-                alt=""
-                width={96}
-                height={86}
-                className="h-11 w-11 object-contain"
-                priority
-              />
-            </span>
-            <span className="leading-none text-white">
-              <span className="block text-xl font-black">NPG</span>
-              <span className="block text-xs font-semibold text-[#D4A53A]">
-                Capital
-              </span>
-            </span>
-          </Link>
-
           <nav className="hidden items-center gap-7 lg:flex" aria-label="Menu principal">
             {navItems.map((item) => (
               <Link

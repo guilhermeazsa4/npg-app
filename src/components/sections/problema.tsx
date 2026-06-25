@@ -30,8 +30,8 @@ export function ProblemaSection() {
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
           {stats.map((stat, i) => (
             <MotionBlock key={stat.value} delay={i * 0.08}>
-              <div className="border-l-2 border-[#D4A53A] bg-[#14344E]/5 p-6">
-                <p className="text-4xl font-black text-[#D4A53A] md:text-5xl">{stat.value}</p>
+              <div className="border-l-2 border-[#F1C75B] bg-[#14344E]/5 p-6">
+                <p className="text-4xl font-black text-[#F1C75B] md:text-5xl">{stat.value}</p>
                 <p className="mt-3 text-sm leading-6 text-[#14344E]/70">{stat.label}</p>
               </div>
             </MotionBlock>

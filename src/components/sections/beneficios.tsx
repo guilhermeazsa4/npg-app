@@ -63,9 +63,9 @@ export function BeneficiosSection() {
             return (
               <MotionBlock key={b.title} delay={i * 0.06}>
                 <article
-                  className="group h-full border-l-2 border-[#D4A53A] bg-white p-6 shadow-[0_16px_46px_rgba(20,52,78,0.08)] transition-transform duration-300 hover:translate-x-1.5"
+                  className="group h-full border-l-2 border-[#F1C75B] bg-white p-6 shadow-[0_16px_46px_rgba(20,52,78,0.08)] transition-transform duration-300 hover:translate-x-1.5"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-[#14344E] text-[#D4A53A] shadow-[0_14px_30px_rgba(20,52,78,0.18)]">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-[#14344E] text-[#F1C75B] shadow-[0_14px_30px_rgba(20,52,78,0.18)]">
                     <Icon aria-hidden="true" className="h-5 w-5" />
                   </span>
                   <h3 className="mt-5 text-lg font-black text-[#14344E]">{b.title}</h3>

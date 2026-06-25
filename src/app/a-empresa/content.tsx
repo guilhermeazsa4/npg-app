@@ -71,13 +71,13 @@ export function AEmpresaContent() {
       {/* Números */}
       <section className="relative overflow-hidden bg-[#0E1F1E] px-5 py-20 text-white lg:px-8 lg:py-24">
         <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(20,52,78,0.9),rgba(14,31,30,1)_55%,rgba(20,52,78,0.82))]" />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#D4A53A]/70 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#F1C75B]/70 to-transparent" />
         <div className="relative z-10 mx-auto max-w-[1220px]">
           <div className="grid gap-8 sm:grid-cols-3">
             {stats.map((s, i) => (
               <MotionBlock key={s.label} delay={i * 0.1}>
                 <div className="text-center">
-                  <p className="text-5xl font-black text-[#D4A53A] md:text-6xl">{s.value}</p>
+                  <p className="text-5xl font-black text-[#F1C75B] md:text-6xl">{s.value}</p>
                   <p className="mt-3 text-sm text-white/60">{s.label}</p>
                 </div>
               </MotionBlock>
@@ -99,9 +99,9 @@ export function AEmpresaContent() {
               return (
                 <MotionBlock key={v.title} delay={i * 0.08}>
                   <article
-                    className="h-full border-l-2 border-[#D4A53A] bg-white p-6 shadow-[0_16px_46px_rgba(20,52,78,0.08)] transition-transform duration-300 hover:translate-x-1.5"
+                    className="h-full border-l-2 border-[#F1C75B] bg-white p-6 shadow-[0_16px_46px_rgba(20,52,78,0.08)] transition-transform duration-300 hover:translate-x-1.5"
                   >
-                    <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-[#14344E] text-[#D4A53A] shadow-[0_14px_30px_rgba(20,52,78,0.18)]">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-[8px] bg-[#14344E] text-[#F1C75B] shadow-[0_14px_30px_rgba(20,52,78,0.18)]">
                       <Icon aria-hidden="true" className="h-5 w-5" />
                     </span>
                     <h3 className="mt-5 text-xl font-black text-[#14344E]">{v.title}</h3>

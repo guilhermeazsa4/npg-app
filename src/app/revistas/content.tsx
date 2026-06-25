@@ -27,16 +27,16 @@ export function RevistasContent() {
                   className="group overflow-hidden rounded-[8px] border border-[#14344E]/10 bg-white shadow-[0_16px_46px_rgba(20,52,78,0.06)] transition-transform duration-300 hover:-translate-y-1.5"
                 >
                   <div className="flex h-56 items-center justify-center bg-[#14344E]">
-                    <BookOpen className="h-14 w-14 text-[#D4A53A]" />
+                    <BookOpen className="h-14 w-14 text-[#F1C75B]" />
                   </div>
                   <div className="p-6">
-                    <p className="text-xs font-bold text-[#D4A53A]">{r.edition}</p>
+                    <p className="text-xs font-bold text-[#F1C75B]">{r.edition}</p>
                     <h3 className="mt-2 text-lg font-black leading-snug text-[#14344E]">
                       {r.title}
                     </h3>
                     <button
                       type="button"
-                      className="mt-4 text-sm font-bold text-[#D4A53A] transition-colors hover:text-[#b8882e]"
+                      className="mt-4 text-sm font-bold text-[#F1C75B] transition-colors hover:text-[#b8882e]"
                     >
                       Ler edição &rarr;
                     </button>

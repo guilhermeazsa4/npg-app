@@ -35,7 +35,7 @@ export function SeuBoletoContent() {
                     </p>
                     <button
                       type="button"
-                      className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[#D4A53A] transition-colors hover:text-[#b8882e]"
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[#F1C75B] transition-colors hover:text-[#b8882e]"
                     >
                       <Download className="h-4 w-4" />
                       Baixar 2ª via
@@ -69,7 +69,7 @@ export function SeuBoletoContent() {
                         type="text"
                         required
                         placeholder="000.000.000-00"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -80,13 +80,13 @@ export function SeuBoletoContent() {
                         id="unidade"
                         type="text"
                         placeholder="Ex.: Bloco B, ap. 51"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                   </div>
                   <button
                     type="submit"
-                    className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] bg-[#D4A53A] px-6 text-sm font-black text-[#0E1F1E] transition-colors hover:bg-[#E1B34C]"
+                    className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] bg-[#F1C75B] px-6 text-sm font-black text-[#0E1F1E] transition-colors hover:bg-[#E1B34C]"
                   >
                     Buscar boleto
                   </button>
@@ -118,7 +118,7 @@ export function SeuBoletoContent() {
                     key={item.text}
                     className="flex items-start gap-4 rounded-[8px] border border-[#14344E]/10 bg-white p-5 shadow-[0_8px_24px_rgba(20,52,78,0.04)]"
                   >
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[6px] bg-[#14344E] text-[#D4A53A]">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[6px] bg-[#14344E] text-[#F1C75B]">
                       <Icon aria-hidden="true" className="h-4 w-4" />
                     </span>
                     <p className="text-sm leading-6 text-[#14344E]/70">{item.text}</p>

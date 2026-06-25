@@ -30,7 +30,7 @@ export function ComoFuncionaSection() {
   return (
     <section className="relative overflow-hidden bg-[#0E1F1E] px-5 py-24 text-white lg:px-8 lg:py-28">
       <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(20,52,78,0.9),rgba(14,31,30,1)_55%,rgba(20,52,78,0.82))]" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#D4A53A]/70 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#F1C75B]/70 to-transparent" />
       <div className="relative z-10 mx-auto max-w-[1220px]">
         <MotionBlock>
           <Eyebrow icon={<Sparkles aria-hidden="true" className="h-4 w-4" />}>
@@ -48,7 +48,7 @@ export function ComoFuncionaSection() {
                 className="glass-premium min-h-[260px] rounded-[8px] p-6 transition-transform duration-300 hover:-translate-y-2"
               >
                 <div className="relative z-10 flex h-full flex-col justify-between">
-                  <span className="text-5xl font-black text-[#D4A53A]">{step.n}</span>
+                  <span className="text-5xl font-black text-[#F1C75B]">{step.n}</span>
                   <div className="pt-8">
                     <h3 className="text-xl font-black text-white">{step.title}</h3>
                     <p className="mt-3 text-sm leading-7 text-white/70">{step.text}</p>

@@ -21,7 +21,7 @@ function HeroContent() {
     <>
       <h1 className="ml-auto max-w-[860px] text-4xl font-black leading-[1.02] md:text-6xl lg:text-[68px]">
         Garantimos a receita,{" "}
-        <span className="text-[#D4A53A]">Você gere melhor.</span>
+        <span className="text-[#F1C75B]">Você gere melhor.</span>
       </h1>
       <p className="ml-auto mt-6 max-w-2xl text-base leading-8 text-white/82 md:text-lg">
         Com a NPG Capital, seu condomínio conta com
@@ -30,8 +30,8 @@ function HeroContent() {
         <br />
         e mais tranquilidade para uma gestão eficiente.
       </p>
-      <p className="mt-5 text-sm font-semibold text-[#D4A53A]">
-        Mais de 420 condomínios atendidos &middot; R$ 180 milhões garantidos
+      <p className="mt-5 text-sm font-semibold text-[#F1C75B]">
+        Mais de X condomínios atendidos &middot; +XX anos de exeriência
       </p>
 
       <div className="mt-9 flex flex-col items-end gap-4 sm:flex-row sm:justify-end">
@@ -47,7 +47,7 @@ export function Hero() {
   const hydrated = useHydrated();
 
   const highlights = [
-    { icon: ShieldCheck, text: "Garantia de 100% da receita" },
+    { icon: ShieldCheck, text: "Receita 100% garantida" },
     { icon: BanknoteArrowUp, text: "Cobrança de taxas atrasadas" },
     { icon: Gavel, text: "Cobrança judicial inclusa" },
     { icon: TrendingUp, text: "Antecipação para obras" },
@@ -77,17 +77,21 @@ export function Hero() {
       </div>
 
       {/* Faixa de destaques */}
-      <div className="relative z-20 mt-10 px-5 lg:absolute lg:inset-x-0 lg:bottom-[8px] lg:mt-0 lg:px-8">
+      <div className="relative z-20 mt-10 px-5 lg:absolute lg:inset-x-0 lg:bottom-[32px] lg:mt-0 lg:px-8">
         <div className="mx-auto max-w-[1220px]">
           <div className="grid max-w-[820px] grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
           {highlights.map((item, i) => {
             const Icon = item.icon;
             const featured = i === 0;
             const content = (
+              <>
+                {featured && (
+                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.52),transparent_36%,rgba(255,255,255,0.22)_72%,transparent)] opacity-90" />
+                )}
               <div className="relative z-10 flex h-full items-center gap-3">
                 <Icon
                   aria-hidden="true"
-                  className={`h-11 w-11 shrink-0 ${featured ? "text-[#14344E]" : "text-[#D4A53A]"}`}
+                  className={`h-11 w-11 shrink-0 ${featured ? "text-[#14344E]" : "text-[#F1C75B]"}`}
                 />
                 <h3
                   className={`text-sm font-black leading-tight ${
@@ -97,13 +101,14 @@ export function Hero() {
                   {item.text}
                 </h3>
               </div>
+              </>
             );
 
             return hydrated ? (
               <motion.article
                 key={item.text}
                 className={`group rounded-[8px] p-4 text-white ${
-                  featured ? "gold-surface text-[#0E1F1E]" : "glass-premium"
+                  featured ? "relative overflow-hidden border border-[#FFE39A]/70 bg-[#F1C75B]/88 text-[#0E1F1E] shadow-[0_16px_42px_rgba(241,199,91,0.3),inset_0_1px_0_rgba(255,255,255,0.46),inset_0_-1px_0_rgba(100,71,17,0.12)]" : "glass-premium"
                 }`}
                 initial={{ opacity: 0, y: 34 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -120,7 +125,7 @@ export function Hero() {
               <article
                 key={item.text}
                 className={`group rounded-[8px] p-4 text-white ${
-                  featured ? "gold-surface text-[#0E1F1E]" : "glass-premium"
+                  featured ? "relative overflow-hidden border border-[#FFE39A]/70 bg-[#F1C75B]/88 text-[#0E1F1E] shadow-[0_16px_42px_rgba(241,199,91,0.3),inset_0_1px_0_rgba(255,255,255,0.46),inset_0_-1px_0_rgba(100,71,17,0.12)]" : "glass-premium"
                 }`}
               >
                 {content}

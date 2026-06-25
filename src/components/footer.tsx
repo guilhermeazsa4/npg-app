@@ -10,23 +10,13 @@ export function Footer() {
       <div className="mx-auto max-w-[1220px]">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
           <div>
-            <div className="flex items-center gap-4">
-              <span className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-[8px] border border-white/15 bg-white shadow-[0_14px_30px_rgba(0,0,0,0.18)]">
-                <Image
-                  src="/assets/npg-symbol.png"
-                  alt=""
-                  width={96}
-                  height={86}
-                  className="h-12 w-12 object-contain"
-                />
-              </span>
-              <div>
-                <p className="text-2xl font-black text-white">NPG Capital</p>
-                <p className="mt-1 text-sm font-semibold text-white/50">
-                  Garantidora condominial
-                </p>
-              </div>
-            </div>
+            <Image
+              src="/assets/logoFull.png"
+              alt="NPG Capital"
+              width={160}
+              height={40}
+              className="h-10 w-auto object-contain"
+            />
             <p className="mt-6 max-w-sm text-sm leading-7 text-white/50">
               Arrecadação garantida e inadimplência por nossa conta — para o seu
               condomínio receber todo mês.
@@ -44,7 +34,7 @@ export function Footer() {
                   Contato
                 </Link>
                 <Link href="/contato#formularios" className="text-white/50 transition-colors hover:text-white">
-                  Formulários
+                  Serviços
                 </Link>
               </div>
             </div>

@@ -20,7 +20,7 @@ export function ComparativaSection() {
   return (
     <section className="relative overflow-hidden bg-[#0E1F1E] px-5 py-24 text-white lg:px-8 lg:py-28">
       <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(20,52,78,0.9),rgba(14,31,30,1)_55%,rgba(20,52,78,0.82))]" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#D4A53A]/70 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#F1C75B]/70 to-transparent" />
       <div className="relative z-10 mx-auto max-w-[1220px]">
         <MotionBlock>
           <Eyebrow icon={<Scale aria-hidden="true" className="h-4 w-4" />}>
@@ -58,14 +58,14 @@ export function ComparativaSection() {
             <div className="glass-premium rounded-[8px] p-6">
               <div className="relative z-10">
                 <div className="mb-6 flex items-end justify-between border-b border-white/10 pb-4">
-                  <h3 className="text-lg font-black text-[#D4A53A]">Com a NPG Capital</h3>
-                  <p className="text-4xl font-black text-[#D4A53A]">100%</p>
+                  <h3 className="text-lg font-black text-[#F1C75B]">Com a NPG Capital</h3>
+                  <p className="text-4xl font-black text-[#F1C75B]">100%</p>
                 </div>
                 <p className="mb-5 text-xs text-white/60">da arrecadação repassada, todo mês.</p>
                 <ul className="space-y-3">
                   {comNpg.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm leading-6 text-white/80">
-                      <CheckCircle2 aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#D4A53A]" />
+                      <CheckCircle2 aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#F1C75B]" />
                       {item}
                     </li>
                   ))}

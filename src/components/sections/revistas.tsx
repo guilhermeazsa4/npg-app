@@ -34,10 +34,10 @@ export function RevistasSection() {
                 className="group overflow-hidden rounded-[8px] border border-[#14344E]/10 bg-white shadow-[0_16px_46px_rgba(20,52,78,0.06)] transition-transform duration-300 hover:-translate-y-1.5"
               >
                 <div className="flex h-48 items-center justify-center bg-[#14344E]">
-                  <BookOpen className="h-12 w-12 text-[#D4A53A]" />
+                  <BookOpen className="h-12 w-12 text-[#F1C75B]" />
                 </div>
                 <div className="p-5">
-                  <p className="text-xs font-bold text-[#D4A53A]">{r.edition}</p>
+                  <p className="text-xs font-bold text-[#F1C75B]">{r.edition}</p>
                   <h3 className="mt-2 text-base font-black leading-snug text-[#14344E]">
                     {r.title}
                   </h3>
@@ -50,7 +50,7 @@ export function RevistasSection() {
         <MotionBlock delay={0.3} className="mt-10">
           <Link
             href="/revistas"
-            className="group inline-flex items-center gap-2 text-sm font-bold text-[#D4A53A] transition-colors hover:text-[#b8882e]"
+            className="group inline-flex items-center gap-2 text-sm font-bold text-[#F1C75B] transition-colors hover:text-[#b8882e]"
           >
             Ver todas as edições
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -29,8 +29,8 @@ export function ContatoContent() {
             >
               {submitted ? (
                 <div className="py-12 text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D4A53A]/10">
-                    <MessageCircle className="h-8 w-8 text-[#D4A53A]" />
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#F1C75B]/10">
+                    <MessageCircle className="h-8 w-8 text-[#F1C75B]" />
                   </div>
                   <h3 className="text-2xl font-black text-[#14344E]">
                     Solicitação recebida.
@@ -60,7 +60,7 @@ export function ContatoContent() {
                         type="text"
                         required
                         placeholder="Seu nome"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -72,7 +72,7 @@ export function ContatoContent() {
                         type="email"
                         required
                         placeholder="voce@email.com"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -84,7 +84,7 @@ export function ContatoContent() {
                         type="tel"
                         required
                         placeholder="(11) 99999-9999"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -96,7 +96,7 @@ export function ContatoContent() {
                         type="text"
                         required
                         placeholder="Nome do condomínio"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -107,7 +107,7 @@ export function ContatoContent() {
                         id="unidades"
                         type="number"
                         placeholder="Ex.: 100"
-                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                     <div>
@@ -118,13 +118,13 @@ export function ContatoContent() {
                         id="mensagem"
                         rows={4}
                         placeholder="Conte um pouco sobre a situação do condomínio"
-                        className="w-full resize-none rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#D4A53A] focus:ring-2 focus:ring-[#D4A53A]/20"
+                        className="w-full resize-none rounded-[4px] border border-[#14344E]/15 bg-white px-4 py-3 text-sm text-[#14344E] outline-none transition-colors focus:border-[#F1C75B] focus:ring-2 focus:ring-[#F1C75B]/20"
                       />
                     </div>
                   </div>
                   <button
                     type="submit"
-                    className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] bg-[#D4A53A] px-6 text-sm font-black text-[#0E1F1E] transition-colors hover:bg-[#E1B34C]"
+                    className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] bg-[#F1C75B] px-6 text-sm font-black text-[#0E1F1E] transition-colors hover:bg-[#E1B34C]"
                   >
                     Solicitar Proposta
                   </button>
@@ -157,17 +157,17 @@ export function ContatoContent() {
 
               <div className="mt-8 space-y-4 border-t border-white/10 pt-6">
                 <div className="flex items-center gap-3">
-                  <Mail aria-hidden="true" className="h-4 w-4 text-[#D4A53A]" />
+                  <Mail aria-hidden="true" className="h-4 w-4 text-[#F1C75B]" />
                   <a href={`mailto:${CONTACT.email}`} className="text-sm text-white/70 hover:text-white">
                     {CONTACT.email}
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone aria-hidden="true" className="h-4 w-4 text-[#D4A53A]" />
+                  <Phone aria-hidden="true" className="h-4 w-4 text-[#F1C75B]" />
                   <span className="text-sm text-white/70">{CONTACT.phone}</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#D4A53A]" />
+                  <MapPin aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-[#F1C75B]" />
                   <span className="text-sm text-white/70">{CONTACT.address}</span>
                 </div>
               </div>

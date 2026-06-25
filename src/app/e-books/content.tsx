@@ -28,7 +28,7 @@ export function EbooksContent() {
                   className="group flex h-full flex-col justify-between overflow-hidden rounded-[8px] border border-[#14344E]/10 bg-white p-6 shadow-[0_16px_46px_rgba(20,52,78,0.06)] transition-transform duration-300 hover:-translate-y-1.5"
                 >
                   <div>
-                    <FileText aria-hidden="true" className="mb-4 h-10 w-10 text-[#D4A53A]" />
+                    <FileText aria-hidden="true" className="mb-4 h-10 w-10 text-[#F1C75B]" />
                     <h3 className="text-lg font-black leading-snug text-[#14344E]">
                       {eb.title}
                     </h3>
@@ -36,7 +36,7 @@ export function EbooksContent() {
                   </div>
                   <Link
                     href="/contato#formularios"
-                    className="group/link mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#D4A53A] transition-colors hover:text-[#b8882e]"
+                    className="group/link mt-6 inline-flex items-center gap-2 text-sm font-bold text-[#F1C75B] transition-colors hover:text-[#b8882e]"
                   >
                     Baixar gratuitamente
                     <Download className="h-4 w-4 transition-transform group-hover/link:translate-y-0.5" />
