@@ -56,8 +56,8 @@ function Hero() {
   return (
     <section className="relative min-h-[820px] bg-[#0E1F1E] pb-12 pt-28 text-white lg:min-h-screen lg:pb-44">
       <div className="hero-image absolute inset-0 bg-cover bg-center" />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(14,31,30,0.94)_0%,rgba(20,52,78,0.76)_46%,rgba(20,52,78,0.22)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,17,24,0.08)_0%,rgba(4,17,24,0.18)_48%,rgba(4,17,24,0.74)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(14,31,30,0.02)_0%,rgba(14,31,30,0.04)_35%,rgba(20,52,78,0.18)_68%,rgba(14,31,30,0.32)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,17,24,0.02)_0%,rgba(4,17,24,0.06)_52%,rgba(4,17,24,0.34)_100%)]" />
       <div className="noise-soft absolute inset-0" />
 
       <div className="relative z-10 mx-auto w-full max-w-[1220px] px-5 pt-14 lg:px-8 lg:pt-24">
