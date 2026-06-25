@@ -26,7 +26,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
+      <body className={`${plusJakarta.className} min-h-full`}>
         <Header />
         {children}
         <Footer />
